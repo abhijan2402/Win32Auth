@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Button, TextField, Typography } from "@mui/material";
 
 const Login = () => {
-  
+
   return (
     <div>
       <form>
@@ -23,18 +23,24 @@ const Login = () => {
             },
           }}
         >
-          <Typography variant="h5" padding={3} textAlign="center">Login</Typography>
+          <Typography variant="h5" padding={3} textAlign="center">Log in</Typography>
+
+          <TextField margin="normal" id="outlined-basic" label="Email" variant="outlined" size='large' color="warning" style={{ width: "80%", borderRadius: "10px" }} />
+          <TextField margin="normal" id="outlined-basic" label="Password" variant="outlined" size='large' color="warning" style={{ width: "80%", borderRadius: "10px" }} />
+
 
           {/* <TextField margin="normal" type={'text'} variant="outlined" placeholder="Name" /> */}
-          <TextField margin="normal" type={'email'} variant="outlined" placeholder="Email"  />
-          <TextField margin="normal" type={'password'} variant="outlined" placeholder="Password"  />
+          {/* <TextField margin="normal" type={'email'} id="outlined-basic" variant="outlined" placeholder="Email" width="100%" color="warning" style={{ color: "black", width: "80%" }} />
+          <TextField margin="normal" type={'password'} variant="outlined" placeholder="Password" style={{ color: "black", width: "80%" }} /> */}
+
 
           <Button
-            sx={{ marginTop: 3, borderRadius: 3, width: "57%" }}
+            sx={{ marginTop: 3, borderRadius: 2, width: "80%", padding: 1 }}
             variant="contained"
             color="warning"
-           
+
           >Login</Button>
+          <Typography style={{ marginTop: "30px", color: "blue" }}>Forgot Password?</Typography>
 
 
         </Box>
